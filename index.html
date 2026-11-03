@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Website resmi SDIT ADZKIA Kare, Madiun. Membentuk Generasi Rabbani yang Cerdas, Mandiri, dan Berakhlak Mulia.">
+<title>SDIT ADZKIA | Kare – Madiun</title>
+<style>
+:root{--green:#08783e;--deep:#064b2d;--lime:#d7e928;--gold:#e9b949;--ink:#17352a;--muted:#65766c;--paper:#fbfdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+.top{background:var(--deep);color:#e9f5eb;font-size:13px;padding:8px 0}.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(10px);box-shadow:0 3px 18px #1232}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--deep)}.brand img{width:48px;height:48px;object-fit:contain}.brand small{display:block;font-size:11px;letter-spacing:1px;color:var(--muted)}
+nav{display:flex;gap:20px;align-items:center;font-size:14px;font-weight:700}nav a:hover{color:var(--green)}.menu{display:none;border:0;background:var(--green);color:white;padding:8px 12px;border-radius:8px}
+.hero{background:radial-gradient(circle at 85% 20%,#eaf7c9 0,transparent 28%),linear-gradient(120deg,#063f27,#08783e 62%,#78a91d);color:white;padding:76px 0 68px;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff30;border-radius:50%;right:-120px;top:-170px;box-shadow:0 0 0 35px #ffffff0c,0 0 0 75px #ffffff0c}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;position:relative;z-index:1}.eyebrow{color:#e9f5a7;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.08;margin:14px 0}.hero p{font-size:18px;max-width:650px;color:#edf7ed}.hero .tagline{font-weight:700;color:#f2f8c5}.hero-logos{display:flex;gap:14px;align-items:center;margin-bottom:22px}.hero-logos img{width:68px;height:68px;object-fit:contain;background:white;border-radius:50%;padding:5px}.hero-photo{border:7px solid #ffffff35;border-radius:28px;overflow:hidden;box-shadow:0 25px 60px #001e18a0;transform:rotate(1deg)}.hero-photo img{display:block;width:100%;height:330px;object-fit:cover}
+.btn{display:inline-block;background:var(--gold);color:#243b20;padding:12px 20px;border-radius:999px;font-weight:800;margin:10px 8px 0 0}.btn.alt{background:white;color:var(--deep)}
+section{padding:68px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 34px}.section-head .eyebrow{color:var(--green)}h2{font-size:clamp(28px,4vw,38px);line-height:1.2;margin:8px 0 12px;color:var(--deep)}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid #e5eee5;border-radius:18px;padding:24px;box-shadow:0 8px 24px #163b1710}.card .symbol{font-size:28px}.card h3{margin:8px 0;color:var(--deep)}.card p{margin:0;color:var(--muted)}
+.about{background:#f0f7e9}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.about-grid img{width:100%;border-radius:20px;box-shadow:0 14px 35px #133c2420}.pill{display:inline-block;background:#e3f2d6;color:var(--green);padding:5px 12px;border-radius:999px;font-size:12px;font-weight:800}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery figure{margin:0;background:white;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px #163b1710}.gallery img{width:100%;height:230px;object-fit:cover;display:block}.gallery figcaption{padding:12px 14px;font-weight:700;color:var(--deep)}
+.achievement{background:#f0f7e9}.ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.ach-grid img{width:100%;height:310px;object-fit:cover;border-radius:14px;background:white;box-shadow:0 8px 24px #163b1715}
+.contact{background:linear-gradient(120deg,#064b2d,#08783e);color:white}.contact h2{color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact .card{color:var(--ink)}.contact .card p{margin:6px 0}
+footer{background:#03351f;color:#dcecdf;padding:26px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:48px 0}.hero-photo{max-width:560px}.cards{grid-template-columns:1fr 1fr}nav{display:none;position:absolute;left:0;right:0;top:72px;background:white;padding:18px 4%;box-shadow:0 8px 15px #0002;flex-direction:column;align-items:flex-start}nav.open{display:flex}.menu{display:block}.gallery,.ach-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.cards,.gallery,.ach-grid{grid-template-columns:1fr}.hero-photo img{height:240px}.gallery img{height:240px}.ach-grid img{height:auto;max-height:460px;object-fit:contain}.brand{font-size:14px}.brand img{width:42px;height:42px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>📍 Dusun Slaji, Desa Randualas, Kare, Kabupaten Madiun</span><span>📞 WhatsApp: 0823-3817-0090</span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#beranda"><img src="assets/logo-sdit.jpg" alt="Logo SDIT ADZKIA"><span>SDIT ADZKIA<small>KARE – MADIUN</small></span></a>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Buka menu">☰ Menu</button>
+<nav><a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#program">Program</a><a href="#galeri">Galeri</a><a href="#prestasi">Prestasi</a><a href="#kontak">Kontak</a></nav>
+</div></header>
+<main>
+<section class="hero" id="beranda"><div class="wrap hero-grid"><div>
+<div class="hero-logos"><img src="assets/logo-sdit.jpg" alt="Logo SDIT ADZKIA"><img src="assets/logo-yayasan.png" alt="Logo Yayasan Pendidikan Adzkia Kare"></div>
+<div class="eyebrow">Sekolah Dasar Islam Terpadu</div>
+<h1>Selamat Datang di<br>SDIT ADZKIA</h1>
+<p class="tagline">Membentuk Generasi Rabbani yang Cerdas, Mandiri, dan Berakhlak Mulia!</p>
+<p>Tempat tumbuh dan belajar untuk membangun ilmu, iman, karakter, serta prestasi peserta didik.</p>
+<a class="btn" href="https://wa.me/6282338170090?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20tentang%20SDIT%20ADZKIA">Hubungi Sekolah</a><a class="btn alt" href="#profil">Jelajahi Profil</a>
+</div><div class="hero-photo"><img src="assets/guru-sdit.jpg" alt="Foto bersama guru dan tenaga pendidik SDIT ADZKIA"></div></div></section>
+<section id="profil"><div class="wrap about-grid"><div><span class="pill">Profil Sekolah</span><h2>Mendidik dengan ilmu, iman, dan keteladanan</h2><p>SDIT ADZKIA merupakan lembaga pendidikan dasar Islam terpadu di bawah naungan Yayasan Pendidikan Adzkia Kare. Sekolah berkomitmen mendampingi peserta didik agar berkembang dalam pengetahuan, kemandirian, dan akhlak mulia.</p><p><b>Nama yayasan:</b> Yayasan Pendidikan Adzkia Kare</p><p><b>Alamat:</b> Dusun Slaji, RT 27 / RW 09, Desa Randualas, Kecamatan Kare, Kabupaten Madiun, Jawa Timur 63138.</p></div><img src="assets/guru-sdit.jpg" alt="Keluarga besar SDIT ADZKIA"></div></section>
+<section id="program"><div class="wrap"><div class="section-head"><div class="eyebrow">Pendidikan Terpadu</div><h2>Belajar dan bertumbuh bersama</h2><p>Penguatan ilmu pengetahuan, pembiasaan ibadah, karakter, dan pengalaman belajar yang bermakna.</p></div><div class="cards">
+<div class="card"><div class="symbol">📖</div><h3>Pendidikan Al-Qur'an</h3><p>Mendorong peserta didik mencintai Al-Qur'an melalui pembelajaran dan pembiasaan membaca serta menghafal.</p></div>
+<div class="card"><div class="symbol">🎓</div><h3>Akademik Berkualitas</h3><p>Mengembangkan kemampuan literasi, numerasi, bahasa, sains, dan wawasan peserta didik.</p></div>
+<div class="card"><div class="symbol">🌱</div><h3>Karakter & Kemandirian</h3><p>Menanamkan disiplin, tanggung jawab, kepedulian, percaya diri, dan akhlak mulia.</p></div>
+</div></div></section>
+<section class="about" id="galeri"><div class="wrap"><div class="section-head"><div class="eyebrow">Dokumentasi</div><h2>Galeri kegiatan sekolah</h2><p>Potret kebersamaan, aktivitas, dan pengalaman belajar siswa SDIT ADZKIA.</p></div><div class="gallery">
+<figure><img src="assets/guru-sdit.jpg" alt="Guru dan tenaga pendidik"><figcaption>Keluarga besar guru SDIT ADZKIA</figcaption></figure>
+<figure><img src="assets/juara-olahraga.png" alt="Siswa meraih juara turnamen olahraga"><figcaption>Prestasi olahraga siswa</figcaption></figure>
+<figure><img src="assets/kegiatan-pramuka.jpg" alt="Kegiatan kepramukaan"><figcaption>Kegiatan kepramukaan</figcaption></figure>
+</div></div></section>
+<section class="achievement" id="prestasi"><div class="wrap"><div class="section-head"><div class="eyebrow">Apresiasi Prestasi</div><h2>Bangga atas setiap pencapaian</h2><p>Prestasi siswa menjadi penyemangat untuk terus belajar, berusaha, dan mengukir kebaikan.</p></div><div class="ach-grid">
+<img src="assets/prestasi-tartil.jpg" alt="Poster prestasi lomba tartil"><img src="assets/prestasi-olimpiade.jpg" alt="Poster prestasi olimpiade"><img src="assets/prestasi-singer.jpg" alt="Poster prestasi lomba singer"><img src="assets/prestasi-matematika.jpg" alt="Poster prestasi matematika"><img src="assets/prestasi-mtq.jpg" alt="Poster prestasi MTQ">
+</div></div></section>
+<section class="contact" id="kontak"><div class="wrap"><div class="section-head"><div class="eyebrow">Informasi & Kontak</div><h2>Silakan berkunjung dan mengenal kami</h2><p>Kami siap membantu memberikan informasi tentang sekolah.</p></div><div class="contact-grid"><div class="card"><h3>📍 Alamat Sekolah</h3><p>Dusun Slaji, RT 27 / RW 09, Desa Randualas, Kecamatan Kare, Kabupaten Madiun, Jawa Timur 63138.</p><p><a href="https://www.google.com/maps/search/?api=1&query=SDIT+ADZKIA+Randualas+Kare+Madiun" target="_blank" rel="noopener"><b>Lihat lokasi di Google Maps ↗</b></a></p></div><div class="card"><h3>💬 Hubungi Kami</h3><p><b>WhatsApp:</b> 0823-3817-0090</p><p><b>Yayasan:</b> Yayasan Pendidikan Adzkia Kare</p><a class="btn" href="https://wa.me/6282338170090?text=Assalamu%27alaikum%2C%20saya%20ingin%20mendapatkan%20informasi%20SDIT%20ADZKIA" target="_blank" rel="noopener">Chat WhatsApp</a></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> SDIT ADZKIA – Yayasan Pendidikan Adzkia Kare</span><span>Membentuk Generasi Rabbani yang Cerdas, Mandiri, dan Berakhlak Mulia.</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));</script>
+</body></html>
